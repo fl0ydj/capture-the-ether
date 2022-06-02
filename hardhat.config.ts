@@ -19,10 +19,10 @@ const config = {
   },
   networks: {
     hardhat: {},
-    mumbai: {
+    /*mumbai: {
       url: `https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
       accounts: [`${MUMBAI_PRIVATE_KEY}`],
-    },
+    },*/
   },
 };
 
