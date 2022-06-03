@@ -1,6 +1,7 @@
-pragma solidity ^0.4.21;
-interface FuzzyIdentityChallenge{
-    function authenticate() public {};
+pragma solidity ^0.4.22;
+import "hardhat/console.sol";
+interface IFuzzyIdentityChallenge{
+    function authenticate() external;
 }
 contract Hack {
     address public identityContract;
@@ -11,7 +12,8 @@ contract Hack {
     function name() external view returns (bytes32) {
         return bytes32("smarx");
     }
-    function auth() public { //have to create an interface here!!
-        FuzzyIdentityChallenge(identityContract).authenticate();
+    function auth() public {
+        console.log("Address",identityContract);
+        IFuzzyIdentityChallenge(identityContract).authenticate();
     }
 }

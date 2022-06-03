@@ -1,5 +1,5 @@
-pragma solidity ^0.4.21;
-
+pragma solidity ^0.4.22;
+import "hardhat/console.sol";
 interface IName {
     function name() external view returns (bytes32);
 }
@@ -8,8 +8,9 @@ contract FuzzyIdentityChallenge {
     bool public isComplete;
 
     function authenticate() public {
+        console.log("Here",msg.sender);
         require(isSmarx(msg.sender));
-        //require(isBadCode(msg.sender));
+        require(isBadCode(msg.sender));
 
         isComplete = true;
     }

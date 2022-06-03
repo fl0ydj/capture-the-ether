@@ -2,11 +2,87 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\jushe\\OneDrive\\Documents\\Blockchain\\Playing around\\capture-the-ether\\contracts\\fuzzyIdentity.sol": {
-      "lastModificationDate": 1654176452259,
-      "contentHash": "3f815adae669cfa2e51e3e29dfdf4739",
+      "lastModificationDate": 1654241127534,
+      "contentHash": "dffe3712c346fc0bb62206274ce1cb6c",
       "sourceName": "contracts/fuzzyIdentity.sol",
       "solcConfig": {
-        "version": "0.4.21",
+        "version": "0.4.22",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.22"
+      ],
+      "artifacts": [
+        "FuzzyIdentityChallenge",
+        "IName"
+      ]
+    },
+    "C:\\Users\\jushe\\OneDrive\\Documents\\Blockchain\\Playing around\\capture-the-ether\\contracts\\hack.sol": {
+      "lastModificationDate": 1654240695369,
+      "contentHash": "2ebeb44802012ab00b717d645022cfa2",
+      "sourceName": "contracts/hack.sol",
+      "solcConfig": {
+        "version": "0.4.22",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.22"
+      ],
+      "artifacts": [
+        "Hack",
+        "IFuzzyIdentityChallenge"
+      ]
+    },
+    "C:\\Users\\jushe\\OneDrive\\Documents\\Blockchain\\Playing around\\capture-the-ether\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1654171115851,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.4.22",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -30,48 +106,10 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.4.21"
+        ">=0.4.22 <0.9.0"
       ],
       "artifacts": [
-        "FuzzyIdentityChallenge",
-        "IName"
-      ]
-    },
-    "C:\\Users\\jushe\\OneDrive\\Documents\\Blockchain\\Playing around\\capture-the-ether\\contracts\\hack.sol": {
-      "lastModificationDate": 1654177879508,
-      "contentHash": "70f359bf340920e1b47f768558222f50",
-      "sourceName": "contracts/hack.sol",
-      "solcConfig": {
-        "version": "0.4.21",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./fuzzyIdentity.sol"
-      ],
-      "versionPragmas": [
-        "^0.4.21"
-      ],
-      "artifacts": [
-        "Hack"
+        "console"
       ]
     }
   }

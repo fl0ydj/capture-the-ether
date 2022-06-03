@@ -12,13 +12,13 @@ const MUMBAI_PRIVATE_KEY = process.env.MUMBAI_PRIVATE_KEY;
  * @type import('hardhat/config').HardhatUserConfig
  */
 const config = {
-  solidity: "0.4.21",
+  solidity: "0.4.22",
   typechain: {
     outDir: "artifacts/contracts/types",
     target: "ethers-v5",
   },
   networks: {
-    hardhat: {},
+    hardhat: { gas: 2100000, gasPrice: 8000000000 },
     /*mumbai: {
       url: `https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
       accounts: [`${MUMBAI_PRIVATE_KEY}`],

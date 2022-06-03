@@ -17,7 +17,7 @@ const deploy = async () => {
     CoActTokenABI.abi
   ) as FuzzyIdentityChallenge;
   await hack.setIdentityContract(CONTRACT_ADDRESS);
-  await hack.auth();
+  await hack.auth({ gasLimit: 100000 });
 };
 
 deploy()
